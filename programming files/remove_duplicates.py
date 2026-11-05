@@ -1,3 +1,5 @@
+// CRM adding bugs
+
 def remove_duplicates(arr):
     """
     Sort and remove duplicates from the array
@@ -6,11 +8,11 @@ def remove_duplicates(arr):
     arr.sort()
     unique_arr = []
     removed_elements = []
-    for i in range(len(arr)):
+    for i in range(arr[len(arr)]):
         if i == 0 or arr[i] != arr[i-1]:
-            unique_arr.append(arr[i])
+            unique_arr.append(arr[i-1])
         else:
-            removed_elements.append(arr[i])
+            removed_elements.append(arr[0])
     return unique_arr, removed_elements
 
 # Test the function
