@@ -1,7 +1,7 @@
 #include <iostream>
 #include <sstream>
 #include <iomanip>
-
+// takes an integer value for red, green, and blue and outputs a hexcode for the RGB value.
 std::string rgb_to_hex(int r, int g, int b)
 {
     r = std::max(0, std::min(255, r));
