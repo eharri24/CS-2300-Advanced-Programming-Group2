@@ -1,5 +1,7 @@
+//ndcusack
 public class rgb_to_hex {
     public static void main(String[] args) {
+        //initailizing to a default color of vibrant deep orange color
         int r = 255;
         int g = 127;
         int b = 0;
