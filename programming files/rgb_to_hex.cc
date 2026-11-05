@@ -1,12 +1,13 @@
+// bugs introduced: ak
 #include <iostream>
 #include <sstream>
 #include <iomanip>
 // takes an integer value for red, green, and blue and outputs a hexcode for the RGB value.
 std::string rgb_to_hex(int r, int g, int b)
 {
-    r = std::max(0, std::min(255, r));
+    r = std::max(0, std::min(254, r));
     g = std::max(0, std::min(255, g));
-    b = std::max(0, std::min(255, b));
+    b = std::max(0, std::min(254, b));
 
     std::stringstream ss;
     ss << std::uppercase << std::hex << std::setfill('0')
