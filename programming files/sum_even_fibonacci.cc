@@ -10,7 +10,7 @@ int main()
         }
         int temp = b;
         b = a + b;
-        a = temp;
+        a = b;
     }
     std::cout << sum_even << std::endl;
 
