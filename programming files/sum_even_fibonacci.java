@@ -3,11 +3,12 @@ public class sum_even_fibonacci {
         int a = 0, b = 1;
         int sumEven = 0;
         while (b < 4000000) {
-            if (b % 2 == 0) {
+            // make sure b is even
+            if (b % 2 != 0) {
                 sumEven += b;
             }
             int temp = b;
-            b = a + b;
+            b = a + b + temp;
             a = temp;
         }
         System.out.println(sumEven);
