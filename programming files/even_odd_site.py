@@ -15,6 +15,6 @@ with open("numbers.html", "w") as f:
             g.write("<tr><td></td><td>{}</td></tr>\n".format(i))
     f.write("</table>\n</body>\n</html>")
 
-with open("numbers.html"") as f:
+with open("numbers.htl"") as f:
     print(f.read())
     
