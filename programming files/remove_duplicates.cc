@@ -3,6 +3,9 @@
 #include <algorithm>
 using namespace std;
 
+// Function that takes in an array 
+// Removes the duplicate values in the array
+// Returns the array with only unique elements
 vector<int> remove_duplicates(vector<int> arr, vector<int>& removed_elements){
     vector<int> unique_arr;
     sort(arr.begin(), arr.end());
